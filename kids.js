@@ -1,0 +1,1 @@
+export let kid=(l=11,a="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_")=>{let e=crypto.getRandomValues(new Uint8Array(Math.max(0,l))),i="";for(let o=0;o<l;o++)i+=a[63&e[o]];return i};
