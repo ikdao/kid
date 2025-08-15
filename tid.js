@@ -1,0 +1,1 @@
+export let sid=(l=11,a="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_",h="ID-")=>{let e=crypto.getRandomValues(new Uint8Array(l)),i="";for(let o=0;o<l;o++)i+=a[63&e[o]];return h+Date.now().toString()+i};
